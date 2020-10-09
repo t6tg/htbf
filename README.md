@@ -9,7 +9,7 @@ Make your pull request and earn a free tee from GitHub! 😀
 ## Instructions
 
 - Fork this Reository ( use the button at the top <b>or</b> gh repo fork t6tg/hacktoberfest-thailand-event )
-- Clone your forked repository to your computer ( git clone https://github.com/```<YOUR-USERNAME>```/hacktoberfest-thailand-event )
+- Clone your forked repository to your computer ( git clone https://github.com/YOUR-USERNAME/hacktoberfest-thailand-event )
 - Create a new branch for your modifications ( git checkout -b add-profile )
 - Add your data in contents/
 - Add your file ( git add . ) , commit ( git commit -m "add myprofile" ) and push ( git push -u origin add-profile )
