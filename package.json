@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "hacktobertfest-thailand-event",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "Hacktoberfest event ,The biggest Open Source evrnt",
+  "version": "1.0.0",
+  "author": "Thanawat Gulati",
   "dependencies": {
     "gatsby": "^2.24.67",
     "gatsby-image": "^2.4.20",
@@ -25,7 +25,8 @@
     "prettier": "2.1.2"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "hacktoberfest"
   ],
   "license": "0BSD",
   "scripts": {

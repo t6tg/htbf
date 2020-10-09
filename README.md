@@ -30,9 +30,11 @@ contents/<YOUR-USERNAME>.md
 Copy the next template into your file, delete the boilerplate data and fill the information with yours.
 
 ```
+---
 name: YOURNAME
 github: GITHUB-USERNAME
 message: YOUR-MESSAGE
+---
 ```
 
 ☢️ Do not use special characters in the template above.

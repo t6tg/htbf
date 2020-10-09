@@ -1,0 +1,11 @@
+html,
+body {
+  background-color: #072540;
+  color: white;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 4;
+  margin: 0px 30px;
+}
