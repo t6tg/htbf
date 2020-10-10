@@ -13,7 +13,7 @@ const IndexPage = ({ data }) => (
     <SEO title="Home" />
     <Image />
     <h1 className="total">
-      🎉 Complete Pull Request : {data.allMarkdownRemark.totalCount}
+      🎉 Complete {data.allMarkdownRemark.totalCount} Pull Request
     </h1>
     <br />
     <div className="container">
