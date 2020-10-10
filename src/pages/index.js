@@ -12,9 +12,13 @@ const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
     <Image />
+    <h1 className="total">
+      🎉 Complete Pull Request : {data.allMarkdownRemark.totalCount}
+    </h1>
+    <br />
     <div className="container">
       {data.allMarkdownRemark.edges.map(r => (
-        <Card data={r.node.frontmatter} />
+        <Card key={r.node.frontmatter.github} data={r.node.frontmatter} />
       ))}
     </div>
   </Layout>
@@ -28,9 +32,12 @@ export const query = graphql`
           html
           frontmatter {
             name
+            github
+            message
           }
         }
       }
+      totalCount
     }
   }
 `

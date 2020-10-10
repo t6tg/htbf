@@ -1,11 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap");
 html,
 body {
   background-color: #072540;
-  color: white;
+  font-family: "Inter", sans-serif;
 }
 
 .container {
   display: grid;
-  grid-template-columns: 4;
+  grid-template-columns: 25% 25% 25% 25%;
   margin: 0px 30px;
+}
+
+.card {
+  color: #072540;
+  margin: 22px;
+  background-color: #fcc;
+  padding: 20px;
+  height: auto;
+  box-shadow: 2px 4px 6px #444;
+  -moz-box-shadow: 5px 5px 7px rgba(33, 33, 33, 1);
+  -webkit-box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+  box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+  -moz-transition: -moz-transform 0.15s linear;
+  -o-transition: -o-transform 0.15s linear;
+  -webkit-transition: -webkit-transform 0.15s linear;
+}
+
+.card:nth-child(even) {
+  -o-transform: rotate(4deg);
+  -webkit-transform: rotate(4deg);
+  -moz-transform: rotate(4deg);
+  position: relative;
+  top: 5px;
+  background: #cfc;
+}
+.card:nth-child(3n) {
+  -o-transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  position: relative;
+  top: -5px;
+  background: #ccf;
+}
+.card:nth-child(5n) {
+  -o-transform: rotate(5deg);
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  position: relative;
+  top: -10px;
+}
+
+.card:hover,
+.card:focus {
+  box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.7);
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -o-transform: scale(1.25);
+  position: relative;
+  z-index: 5;
+}
+
+.card a {
+  color: #9c4668;
+}
+
+.total {
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    grid-template-columns: auto;
+  }
+  .total {
+    font-size: 6vw;
+  }
 }
