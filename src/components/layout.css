@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap");
+@import "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap";
 html,
 body {
   background-color: #072540;
@@ -75,6 +75,15 @@ body {
 @media only screen and (max-width: 600px) {
   .container {
     grid-template-columns: auto;
+  }
+  .total {
+    font-size: 6vw;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    grid-template-columns: 33% 33% 33%;
   }
   .total {
     font-size: 6vw;
